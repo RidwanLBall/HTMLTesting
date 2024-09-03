@@ -20,6 +20,9 @@
         <li>
           <a href="#flats">Flats</a>
         </li>
+        <li>
+          <a href="#Contact">Contact me</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -73,12 +76,113 @@
   </section>  
   </article>
   <hr>
+
+  <article id="Contact">
+    <h3>Send me a message about anything at all</h3>
+    <p>Please fill in your details and message here</p>
+
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Info</legend>
+      <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Smith" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Your Secret" required>
+      </p>
+      <p>
+        <label for="Telephone">Telephone:</label>
+        <input type="tel" name="Telephone" id="Telephone" placeholder="(0)xxxxxxxx" pattern="[0-9]{4}[0-9]{5}" required>
+      </p>
+      <p>
+        <label for="Favourite Decade">Favourite Decade:</label>
+        <input type="number" name="Favourite Decade" id="Favourite Decade" min="1950" max="2020" step="10" value="1980">
+        <!-- <p>
+          <label for="drink">Favourite Drink</label>
+          <select name="drink" id="drink" multiple size="3">
+            <optgroup label="Coffees" selected>
+            <option value="regcoffee">Regular Coffee</option>
+            <option value="icedcoffee">Iced Coffee</option>
+            <option value="espresso">Espresso</option>
+          </optgroup>
+          <optgroup label="Milk coffees">
+            <option value="cappuccino">Cappuccino</option>
+            <option value="latte">Latte</option>
+            <option value="macchiatto">Macchiatto</option>
+            <option value="macha">Macha</option>
+          </optgroup>
+            <option value="other">Other</option>        
+          </select>
+        </p> -->
+        <p>
+          <label for="coffee">Favourite Coffees:</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option value="Coffee">
+            <option value="Espresso">
+            <option value="Latte">
+            <option value="Macchiatto">
+            <option value="Cappuccino">
+          </datalist>
+        </p>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>What is your favourite food</legend>
+      <p>
+        <input type="radio" name="food" id="tacos" value="tacos">
+        <label for="tacos">Tacos</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="pizza" value="pizza">
+        <label for="pizza">Pizza</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="burger" value="burger">
+        <label for="burger">Burger</label>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Do you have pets?</legend>
+      <p>
+        <input type="checkbox" name="pets" id="dog" value="dog">
+        <label for="dog">Dogs</label>
+        <input type="checkbox" name="pets" id="cat" value="cat">
+        <label for="cat">Cats</label>
+        <input type="checkbox" name="pets" id="frog" value="frog">
+        <label for="frog">Frogs</label>
+        <br><br>
+        <input type="checkbox" name="pets" id="otherPet" value="otherPet ">
+        <label for="otherPet ">Other</label>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Send me a message :3</legend>
+      <br>
+      <label for="message">Your Message:</label>
+      <br><br>
+      <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message here"></textarea>
+    </fieldset>
+    <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </article>
+</main>
     <footer>
-      <p>Send me a message about anything at all</p>
       <p>
     <a href="#">Jump to Top</a>
   </p>
   </footer>
-  </main>
+  
   </body>
 </html>
