@@ -1,0 +1,76 @@
+Button {
+    border-radius: 5px;
+    color: red;
+  }
+
+body {
+  background-color: rgb(46, 46, 46);
+  color:rgb(245, 220, 255);
+}  
+
+a {
+  color: rgb(34, 179, 147);
+}
+
+a:visited {
+  color: mediumpurple;
+}
+
+a:hover a:active {
+  color:olive;
+}
+
+  #flats {
+    width: 100px;
+    border-radius: 25px;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .username {
+    font-weight: bolder;
+  }
+  #trump {
+    width: 100px;
+    border-radius: 25px;
+    margin-right: 15px;
+  }
+
+  .username {
+    font-weight: bolder;
+  }
+
+.aboutball {
+    color: rgb(162, 0, 255);
+
+}
+
+#secondtitle {
+    font-style: oblique;
+}
+  
+  .Plan {
+    font-size: 30px; 
+    color: deeppink;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h2 {
+    font-family: 'roboto_condensedregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+  }
+
+table, tr, th, td, caption {
+  border: 1px solid #eee;
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.3rem;
+  color: rgb(199, 228, 253);
+}
